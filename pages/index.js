@@ -3,6 +3,7 @@ import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 
 export default function Home() {
+  
   return (
     <div className={styles.container}>
       <Head>
@@ -14,8 +15,8 @@ export default function Home() {
       <main className={styles.main}>
         <h1 className={styles.title}>
           Embebe website<a href="https://nextjs.org">Next.js!</a>
-          <embed src="https://es.wikipedia.org/wiki/Wikipedia:Portada" width="100%" height="400px" />
         </h1>
+        <iframe src="https://uizard.io/" width="100%" height="600px"></iframe>
       </main>
 
       <footer className={styles.footer}>
