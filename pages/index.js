@@ -1,9 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
-  
   return (
     <div className={styles.container}>
       <Head>
@@ -14,23 +13,16 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Embebe website<a href="https://nextjs.org">Next.js!</a>
+        Pagina embebida Ejemplo<a href="https://nextjs.org">!</a>
         </h1>
-        <iframe src="https://uizard.io/" width="100%" height="600px"></iframe>
+        <div className={styles.frame}>
+          <iframe src="https://es.wikipedia.org/wiki/Wikipedia:Portada" frameBorder="0" width="100%" height="100%"></iframe>
+        </div>
       </main>
+      <script>
+        
 
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <span className={styles.logo}>
-            <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} />
-          </span>
-        </a>
-      </footer>
+      </script>
     </div>
   )
 }
